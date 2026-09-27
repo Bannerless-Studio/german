@@ -8,140 +8,76 @@ passages with comprehension questions (see "Reading passages" below).
 
 **Live:** https://bannerless-studio.github.io/german/
 
-This repo holds the German data pack and the German data files its build
-reads. It includes [`vocab-engine`](https://github.com/Bannerless-Studio/vocab-engine)
-as a git submodule at `engine/`. The engine holds the shared UI, the drill
-logic and the shared pack builder, `engine/tools/packbuilder`. The builder's
-German rules live in `engine/tools/packbuilder/langs/de.py`.
+Open the link, pick a level (or take the placement test), and start a Today
+session: short rounds of flashcard-style review mixed with new words, plus a
+Read tab with short passages and comprehension questions, and typing practice
+for spelling. Progress (what you've seen, what's due for review) is saved in
+your browser only, and can be exported/imported as a file to move between
+devices. The site works offline once loaded (it registers a service worker).
 
 **Scope note:** this app gives the vocabulary base for B1. The
 Goethe-Zertifikat B1 also needs grammar, writing and speaking practice,
 which this app does not teach.
 
-**Data quality:** Three QA rounds hand-checked stratified samples. The final round, on fresh seeds, had 60/60 correct primary senses in a 60-word sample and 339 of 341 correct word links in 60 sentences. Both wrong links were then fixed by rules. A fix round after browser QA then fixed these classes by rule: plural nouns read as verbs (Antworten, in vielen Fällen), ihr routing, gehört after haben, second-entry routing (ja sagen, lieber … als, gleich), phrase components (Auf Wiedersehen) and past-subjunctive sentences at A1/A2. A fresh sample after it had 60/60 correct primary senses and 195 of 196 correct links in 33 sentences. The top 300 words have no wrong part of speech. Every noun shows a plural line. Plurals nobody uses (Milchen, Januare) show "rarely pl.". All but 23 words have an example showing the word's own form. Levels are frequency bands, not CEFR: a probe of 41 hand-picked words puts every expected-A1 word in A1 and 36 of 41 within one level, but frequent B1 words such as obwohl and Meinung land in A2. The word list comes from subtitle frequency, which ranks some everyday written-register words past the cut. 39 of them (Supermarkt, Miete, Fahrkarte, regnen, Schnee and others) are kept by hand at B1. They take the places of 39 film-register words near the cut (Schwert, Täter, erschießen and others). Rules, counts and seeds are in `tools/REPORT.md`, and residuals are in `TODO.md`.
+**Data quality:** three QA rounds hand-checked stratified samples; the final
+round had 60/60 correct primary senses and 195/196 correct word links in the
+freshest sample. Every noun shows a plural line (plurals nobody uses, like
+Milchen, show "rarely pl."). All but 23 words have an example showing the
+word's own form. Levels are frequency bands, not CEFR: a probe of 41
+hand-picked words puts every expected-A1 word in A1, but a few frequent B1
+words (obwohl, Meinung) land in A2 because subtitle frequency ranks some
+everyday written-register words past the cut; 39 such words (Supermarkt,
+Miete, Fahrkarte, regnen, Schnee, and others) are kept by hand at B1. Rules,
+counts and seeds are in `tools/REPORT.md`, and residuals are in `TODO.md`.
 
 **Content policy:** sentences on sexual content, suicide, threats, violence,
-dying or death wishes, weapons, blood, poison, corpses, drugs or abuse (a
-shared English list plus German terms) are kept out of A1/A2. A word that is
-itself on the list, such as sterben or die Waffe, takes B1-level examples.
-The policy rebuild held 18 more A1/A2 sentences: 10 moved to B1 and 8 were
-replaced by clean A1/A2 sentences. No word, gloss or id changed. Sentences
-about rape or sexual/child abuse are removed at every level (4 candidates),
-and the check fails on a match. A shared vulgar/sexual English word list also
-scans glosses: a matching sense never leads an A1/A2 gloss, and the check
-fails on any match. töten, sterben and Tod stay at their frequency level as
-neutral core vocabulary; their violent sentences reach learners only at B1
-(same call as Spanish matar/morir and Russian убить). The English half of
-the filter skips die, dies and gift, which are German words; the German side
-(sterben, vergiften) catches those sentences.
+dying or death wishes, weapons, blood, poison, corpses, drugs or abuse are
+kept out of A1/A2. A word that is itself on the list, such as sterben or die
+Waffe, takes B1-level examples. Sentences about rape or sexual/child abuse
+are removed at every level. töten, sterben and Tod stay at their frequency
+level as neutral core vocabulary; their violent sentences reach learners
+only at B1 (same call as Spanish matar/morir and Russian убить). See
+`TODO.md` for the exact rule history and counts.
 
 ## Reading passages (Read tab)
 
-`pack/passages.json` holds 60 short reading texts, 20 each at A1, A2 and B1,
-with comprehension questions each. The format is in the engine's
-`docs/PACK_SCHEMA.md`. The texts were written for this pack (`"src": "gen"`)
-and their source is `tools/passages_src.json`. Rebuild from that source with:
-
-```
-PYTHONPATH=engine/tools python3 -m packbuilder passages .    # --check: report only
-python3 engine/tools/jsonify_pack.py pack                    # passages go into sentences.js
-```
-
-The builder links word ids the same way it does for the example sentences.
-It enforces in-pack coverage of at least 95% at A1 and A2, and at least 93%
-at B1. It also enforces a level budget: an A1 passage may use at most 3 A2
-words (and no B1 words) and an A2 passage at most 3 B1 words. Per-passage
-numbers and the QA notes are in `tools/REPORT_passages.md`.
-
-A level's 20 passages unlock once the learner has learned 70% of that
+60 short reading texts, 20 each at A1, A2 and B1, with comprehension
+questions each. A level's 20 passages unlock once you've learned 70% of that
 level's words. Tapping any word in a passage shows its gloss, including
-inflected forms, via per-sentence token spans linked to word ids.
-Comprehension questions feed missed words back into the review queue as
-weak words.
+inflected forms. Comprehension questions feed missed words back into the
+review queue as weak words. The passages and questions are machine-written,
+checked by an automated QA pass rather than a native speaker.
 
-The passages and questions are machine-written by Claude, checked by an
-automated QA pass; they have not had a native-speaker review.
+Nouns are shown with their article (`das Haus`) and plural (`pl. Häuser`,
+`no pl.`, `pl. only`); typing either the bare noun or the article-form
+scores correctly. Typing is case-insensitive, and umlauts are lenient at
+A1/A2 (`a` for `ä`, ae/oe/ue/ss spellings accepted), strict from B1 on. A
+fold-only match is rejected when it would spell another pack word:
+`schon`/`schön` and `zahlen`/`zählen` are each distinguished, in both
+directions.
 
-## Layout
+## What's in this repo
 
-```
-pack/
-  pack.json         trainer config (levels, placement test, function words, typing rules)
-  words.json        2000 word entries
-  sentences.json    example sentences, each tagged with the word ids it covers
-  attribution.json  per-source licence + contributor attribution
-  pack.js words.js sentences.js   generated by engine/tools/jsonify_pack.py (committed, never hand-edited)
-engine/             git submodule -> vocab-engine (UI, drill logic, build/validate tools,
-                    tools/packbuilder = the shared pack builder, langs/de.py = German rules)
-tools/
-  build_pack.py     shim: runs `python3 -m packbuilder build --lang de --repo .` from engine/tools
-  gloss_overrides.json  hand gloss fixes for high-frequency words ("lemma|pos", lowercase lemma)
-  forced_a1.txt     A1 core list, forced into A1 (the closed sets are in langs/de.py)
-  requirements.txt  engine/tools/packbuilder/requirements.txt + the German spaCy model
-  REPORT.md         generated coverage report from the last build (manual section kept)
-build.sh            builds index.html (the self-contained trainer) from pack/ + engine/
-check.sh            packbuilder check + engine validator + stale-build guard, all in one
-index.html          built trainer, served by GitHub Pages at the repo root
-```
+This repo holds the German data pack (`pack/`) and the data files its build
+reads (`tools/`), plus [`vocab-engine`](https://github.com/Bannerless-Studio/vocab-engine)
+as a git submodule at `engine/`, which holds the shared UI, drill logic and
+pack builder used by every language in this trainer. See `tools/README.md`
+for a file-by-file breakdown of `tools/` (including the German-specific
+builder rules for separable verbs, Sie/sie, tenses and capitalisation), and
+`CLAUDE.md` for the full architecture and build commands.
 
-## Rebuilding
+## Rebuild and publish (maintainers)
 
 ```
-git clone --recurse-submodules <this repo>
-# or, if already cloned: git submodule update --init
-
-cd german
-python3 -m venv .venv
-source .venv/bin/activate
+git clone --recurse-submodules <this repo>   # or: git submodule update --init
+cd german && python3 -m venv .venv && source .venv/bin/activate
 pip install -r tools/requirements.txt
-
-python3 tools/build_pack.py          # rebuild pack/{pack,words,sentences,attribution}.json + tools/REPORT.md
-python3 engine/tools/jsonify_pack.py pack   # regenerate pack/*.js from the .json
-./build.sh                           # build index.html
-./check.sh                           # pack checks + engine validation + stale-build guard
+python3 tools/build_pack.py && python3 engine/tools/jsonify_pack.py pack
+./build.sh && ./check.sh
 ```
 
-Sources are downloaded once into `.cache/`, which is gitignored. The build is
-deterministic, so re-running from cache reproduces byte-identical
-`pack/*.json`. The spaCy tagging pass over the Tatoeba sentences that have an
-English translation runs once and is cached under `.cache/derived/`.
-
-To build against a vocab-engine checkout other than the submodule, set
-`PACKBUILDER_PATH=../vocab-engine/tools` for `tools/build_pack.py` and
-`./check.sh`. QA helpers run with
-`PYTHONPATH=engine/tools python3 -m packbuilder {scan,sample} --lang de --repo .`.
-
-## German rules
-
-The builder's German module handles what the shared pipeline cannot guess.
-
-- **Nouns** are shown with their article, as in `das Haus`. `alt[0]` is the
-  bare noun, so typing either is accepted. Gender and plural come from
-  Wiktionary. The plural is shown under the word, for example `pl. Häuser`,
-  `no pl.` or `pl. only`. Adjectival nouns show the weak form with both
-  articles, as in `der/die Angestellte`.
-- **Capitalisation.** The subtitle frequency list is lowercased, so lemmas
-  are matched in lowercase. Noun case is restored from the part of speech.
-  Homographs such as essen and das Essen are split by their part of speech
-  in the tagged corpus.
-- **Separable verbs** are single lemmas (`anfangen`). When the verb is split,
-  as in "Er fängt morgen an.", the particle is rejoined with the clause's
-  finite verb before counting and linking. The rejoin happens only when
-  Wiktionary has the joined verb. The sentence then links `anfangen` and
-  never the preposition `an`.
-- **Sie and sie** are separate entries. A capitalised Sie mid-sentence is
-  formal. At the start of a sentence, the English translation decides
-  between "you" and "she"/"they".
-- **Tenses.** A1 and A2 example sentences use present tense, Perfekt, and
-  Präteritum of sein, haben and the modals only. Other Präteritum sentences
-  are kept for B1.
-- **Typing** is case-insensitive. At A1 and A2, umlauts are lenient: `a` for
-  `ä` is accepted, and the ae/oe/ue/ss spellings are accepted.
-  From B1 on, spelling is strict. A fold-only match is rejected when it
-  spells another pack word instead: typed `schon`/`schön` and
-  `zahlen`/`zählen` are each distinguished, in both directions.
-- Compounds stay single lemmas and are never decomposed. Modal verbs are
-  drilled as content words.
+See `tools/README.md` for what each rebuild step reads/writes and `CLAUDE.md`
+for the pinned commands, submodule-update flow and forbidden patterns.
 
 ## Sources and licences
 
@@ -175,6 +111,3 @@ mean of log subtitle-rank and log `wordfreq`-rank.
 
 This is a simple, reproducible proxy for CEFR level. It is not an official
 CEFR classification. See the data quality note above for a probe-word check.
-
-To take an engine update, run `git submodule update --remote engine`, then
-rebuild with `./build.sh`.
