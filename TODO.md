@@ -92,3 +92,4 @@ Residuals from the v1 QA rounds. The rules already in place are described in
   builder's internal lowercase lemma (`haus|noun`, `beamter|noun`), not the
   displayed words.json lemma. `.cache/derived/de_idkeys.json` holds the
   current build's keys.
+- Republish 09e90bc: sentence spans (20007/20007 linked words placed); inflected forms now cloze targets.
