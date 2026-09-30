@@ -93,3 +93,4 @@ Residuals from the v1 QA rounds. The rules already in place are described in
   displayed words.json lemma. `.cache/derived/de_idkeys.json` holds the
   current build's keys.
 - Republish 09e90bc: sentence spans (20007/20007 linked words placed); inflected forms now cloze targets.
+- Republish ef44c6e: no word moves (de opts out of the gloss rule); deleted override keys bulle|noun, verhaften|verb, truppe|noun, klappe|noun, toter|noun (words dropped in 7acabec); set-counter and no-voice planner fixes
