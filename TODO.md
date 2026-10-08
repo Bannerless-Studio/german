@@ -94,3 +94,5 @@ Residuals from the v1 QA rounds. The rules already in place are described in
   current build's keys.
 - Republish 09e90bc: sentence spans (20007/20007 linked words placed); inflected forms now cloze targets.
 - Republish ef44c6e: no word moves (de opts out of the gloss rule); deleted override keys bulle|noun, verhaften|verb, truppe|noun, klappe|noun, toter|noun (words dropped in 7acabec); set-counter and no-voice planner fixes
+
+- Migration proof: rollback hash 1b2f7046261d0e8ee91adbf542076ddbcf083610; previous live md5 index 07dea3a283e0633ef18f6daeb756297e, sw 9f895038d0c7f7be949d463ecaae35e1. Storage: new fields day/sn/t/u/f/p/pm/pv/pause/read.done s,ls/today.tw on first use; boot writes nothing; previous build ef44c6e carries them (migration [port] 9/9). New md5 index 5477185f18c313f058d05bad5905c124, sw e1c5d4213287b7cf4c96022370a5bc59 (engine 7b8c173; ETA gain [0.005307, 0.003376, 0.002705], known 7.582, gates 3/3 in and out of sample).
