@@ -186,6 +186,8 @@
     ]
   },
   "gapGender": true,
+  "patterns": true,
+  "patternCue": "after",
   "eta": {
     "curve": [
       [
