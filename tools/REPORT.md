@@ -16,10 +16,10 @@ Each subtitle / wordfreq surface form is split over the (lemma, POS) pairs it ta
 
 | list | surfaces resolved from corpus | simplemma fallback |
 |---|---|---|
-| subtitles (top 100,000 surfaces) | 33,979 | 65,916 |
-| wordfreq top 30,000 | 19,403 | 10,314 |
+| subtitles (top 100,000 surfaces) | 33,939 | 65,956 |
+| wordfreq top 30,000 | 19,388 | 10,329 |
 
-Fallback lemmas whose POS could not be attached from another surface: 50,088. Clitic compounds resolved to the verb by suffix stripping: 0 distinct forms. Tokens with no dictionary-validated lemma (kept, never selected as words): 24,705.
+Fallback lemmas whose POS could not be attached from another surface: 50,091. Clitic compounds resolved to the verb by suffix stripping: 0 distinct forms. Tokens with no dictionary-validated lemma (kept, never selected as words): 24,705.
 
 ## Word-selection funnel
 
@@ -27,8 +27,8 @@ Candidate pool: 6,858 (lemma, POS) keys in blended-rank order, one POS per lemma
 
 | Exclusion | Count | Examples |
 |---|---|---|
+| no usable Wiktionary entry for corpus POS | 74 | hey, kriegen, wow, meister, viele, dar, tommy, gehts, that, vieler, gibts, gibts |
 | second POS entry without a distinct sense | 73 | aber, all, anderer, ganz, mehr, bis, dein, jeder, beide, warum, ohne, recht |
-| no usable Wiktionary entry for corpus POS | 73 | hey, kriegen, wow, meister, viele, dar, tommy, gehts, that, vieler, gibts, gibts |
 | English loanword unattested in German corpus | 31 | miss, mom, boss, story, deal, top, lady, lord, van, out, pop, master |
 | interjection (not in forced greetings) | 25 | na, ach, okay, stimmt, o, ah, he, naja, ha, äh, ähm, weh |
 | proper noun (corpus PROPN/capitalised majority) | 15 | internet, hm, mark, ok, city, oh, rum, queen, billy, polen, lee, high |
@@ -42,17 +42,17 @@ Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 804, 'verb': 513, 'adj'
 
 ## Sentences
 
-- Final sentences: **3,393**, 934 with audio (`https://tatoeba.org/audio/download/<audio_id>`).
-- Sentence ids (`tools/sentence_ids_v1.json`): 3,393 kept, 0 new, 11 retired.
+- Final sentences: **3,403**, 934 with audio (`https://tatoeba.org/audio/download/<audio_id>`).
+- Sentence ids (`tools/sentence_ids_v1.json`): 3,395 kept, 8 new (s3405, s3406, s3407, s3408, s3409, s3410, s3411, s3412), 9 retired.
 - Word coverage: 0 = 0, 1 = 1, 2 = 1999.
-- Candidate sentences (terminal punctuation, 3-14 tokens, content lemmas in pack/top-3000, >=1 link): 307,528. Rejected for a content lemma outside pack/top-3000: 165,564.
-- Präteritum (other than sein/haben/modals): 46,248 candidates contain one; 46,199 were blocked for A1/A2 words; 246 in the final set (all lv B1).
-- Primary word level of each sentence: {'A1': 896, 'A2': 1229, 'B1': 1268}.
+- Candidate sentences (terminal punctuation, 3-14 tokens, content lemmas in pack/top-3000, >=1 link): 307,678. Rejected for a content lemma outside pack/top-3000: 165,414.
+- Präteritum (other than sein/haben/modals): 46,294 candidates contain one; 46,244 were blocked for A1/A2 words; 247 in the final set (all lv B1).
+- Primary word level of each sentence: {'A1': 903, 'A2': 1231, 'B1': 1269}.
 - Token-length distribution of the final set:
 
 | tokens | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| sentences | 361 | 707 | 198 | 989 | 1019 | 87 | 19 | 5 | 6 | 2 |
+| sentences | 362 | 712 | 198 | 991 | 1021 | 87 | 19 | 5 | 6 | 2 |
 
 ## Top 100 by rank (lemma [pos] gloss)
 
@@ -130,8 +130,8 @@ Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 804, 'verb': 513, 'adj'
   71 doch [adv] after all, yet; (answer) yes
   72 mal [adv] once, just (softener)
   73 tun [verb] to do
-  74 wie [prep] like; as
-  75 wieder [adv] again
+  74 wieder [adv] again
+  75 wie [prep] like; as
   76 dein [det] your (informal)
   77 um [conj] in order to, so as to
   78 sehr [adv] very
@@ -269,5 +269,3 @@ glosses are unchanged. Check: 0 errors, 13 warnings. Determinism: two builds
 - 2026-09-25: engine bumped to 072795d (voice-init fix, no-voice notice timing, word ceiling). 8 words moved A2->B1 under the shared word-level ceiling: töten, Waffe, Sex, Blut, umbringen, Mord, Droge, Leiche. Band-edge shifts from re-counting: außer A2->A1; Loch, studieren, präsentieren, teilnehmen, Pause, Doktor, Vorschlag, Schicksal B1->A2. Sentences 3,407 -> 3,399 (8 dropped, 0 added), passages byte-identical. No rank, id or gloss changed.
 - 2026-10-14: gloss and tier QA pass (engine 41b5fff tools). Part A: all 2000 glosses read, 250 `en` changed (248 keys in tools/gloss_overrides.json, now 450 keys; 9 older keys edited): wrong or rare primary sense or missing B1 sense first (about 155), duplicate `en` disambiguated (about 38), explanation-first or truncated (about 17), wrong POS or form (about 22), archaic or regional wording (about 18). Part B: new tools/tiers_overrides.json, 160 moves by word id: 140 peripheral -> core (60 A1 basics: numerals 11-1000, colours, days, months, seasons, greetings, food; 39 B1 survival words ids w2001-w2039; 41 A2/B1 spoken, travel and home basics) and 20 core -> peripheral (subtitle genre: Idiot, Hoelle, Teufel, Schwanz; ranks and royalty: Soldat, General, Armee, Prinz, Prinzessin, Koenigin, Koenig, Engel, Feind; crime: Mord, Leiche, umbringen, Waffe; Dollar, manch, namens). Tiers [ambient core peripheral]: A1 [100, 500, 0], A2 [0, 547, 153], B1 [0, 458, 242]. Ids, rank, lv, g, pron and examples unchanged by the pass. Sample 505: words 59/60 before fix (ergeben lacked "make sense"), links 99.1% (rein, billig, eingehend), sentences 57/60 fully correct. Gang (die Gang, gang) keeps its gloss: the B1-common der Gang (corridor, gear) is a lexicon/gender defect, not a gloss one. Two pattern sentences (src s0125, s3376) are no longer in sentences.json after the engine bump; replaced in patterns.json by s2888 (p01.2) and s3403 (p10.3).
 <!-- manual:end -->
-
-Review fixes: p01.2 now s3369 (age, forces ist); p10.3 dropped (s3403 idiom), p10 keys lose denn (w0327); 12 glosses (laufen rennen anfangen starten selbst gleichzeitig verhalten bestimmt gewiss rund weg fort).

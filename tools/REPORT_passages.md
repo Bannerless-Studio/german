@@ -11,7 +11,7 @@ tokens of the passage text, the count the app shows (report only).
 
 - **A1**: 20 passages; words/passage 64-89 (median 77.5); ws_words 64-89; coverage min 1.000, median 1.000 (rule >= 0.95); linked min 1.000; questions mc 42, tf 45
 - **A2**: 30 passages; words/passage 97-120 (median 115.5); ws_words 97-120; coverage min 0.977, median 1.000 (rule >= 0.95); linked min 0.977; questions mc 79, tf 68
-- **B1**: 30 passages; words/passage 132-149 (median 143.5); ws_words 133-150; coverage min 1.000, median 1.000 (rule >= 0.93); linked min 1.000; questions mc 81, tf 69
+- **B1**: 30 passages; words/passage 132-149 (median 143.5); ws_words 133-150; coverage min 1.000, median 1.000 (rule >= 0.93); linked min 0.986; questions mc 81, tf 69
 
 | id | lv | title | words | ws_words | coverage | linked | out-of-pack lemmas (reason) | higher-level lemmas |
 |---|---|---|---|---|---|---|---|---|
@@ -69,11 +69,11 @@ tokens of the passage text, the count the app shows (report only).
 | p0052 | B1 | Ein Garten auf dem Dach | 142 | 142 | 1.000 | 1.000 | - | - |
 | p0053 | B1 | Wer kocht am besten? | 142 | 142 | 1.000 | 1.000 | - | - |
 | p0054 | B1 | Die Hochzeit meines Bruders | 138 | 138 | 1.000 | 1.000 | - | - |
-| p0055 | B1 | Das Museum am Abend | 138 | 139 | 1.000 | 1.000 | - | - |
+| p0055 | B1 | Das Museum am Abend | 138 | 139 | 1.000 | 0.993 | - | - |
 | p0056 | B1 | Von zu Hause arbeiten | 149 | 149 | 1.000 | 1.000 | - | - |
 | p0057 | B1 | Mein Fahrrad ist weg | 147 | 147 | 1.000 | 1.000 | - | - |
 | p0058 | B1 | Mehr Busse für unser Dorf | 145 | 145 | 1.000 | 1.000 | - | - |
-| p0059 | B1 | Eine Sprache als Erwachsener lernen | 146 | 146 | 1.000 | 1.000 | - | - |
+| p0059 | B1 | Eine Sprache als Erwachsener lernen | 146 | 146 | 1.000 | 0.993 | - | - |
 | p0060 | B1 | In zehn Jahren | 143 | 143 | 1.000 | 1.000 | - | - |
 | p0061 | A2 | Pläne für Samstag | 120 | 120 | 1.000 | 1.000 | - | B1: Eis, mitkommen |
 | p0062 | A2 | Am Bahnhof | 119 | 119 | 1.000 | 1.000 | - | B1: Fahrkarte |
@@ -90,9 +90,9 @@ tokens of the passage text, the count the app shows (report only).
 | p0073 | B1 | Das Vorstellungsgespräch | 139 | 139 | 1.000 | 1.000 | - | - |
 | p0074 | B1 | Kochen für Freunde | 137 | 137 | 1.000 | 1.000 | - | - |
 | p0075 | B1 | Mehr Menschen fahren Rad | 149 | 150 | 1.000 | 1.000 | - | - |
-| p0076 | B1 | Ein Gespräch über Bilder | 144 | 144 | 1.000 | 1.000 | - | - |
+| p0076 | B1 | Ein Gespräch über Bilder | 144 | 144 | 1.000 | 0.986 | - | - |
 | p0077 | B1 | Eine Wanderung mit Folgen | 144 | 144 | 1.000 | 1.000 | - | - |
-| p0078 | B1 | Ein Jahr im Ausland | 135 | 135 | 1.000 | 1.000 | - | - |
+| p0078 | B1 | Ein Jahr im Ausland | 135 | 135 | 1.000 | 0.992 | - | - |
 | p0079 | B1 | Der kaputte Wagen | 138 | 138 | 1.000 | 1.000 | - | - |
 | p0080 | B1 | Der achtzigste Geburtstag | 140 | 140 | 1.000 | 1.000 | - | - |
 
