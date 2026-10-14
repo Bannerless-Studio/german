@@ -94,6 +94,7 @@
       "Ramses",
       "Rovo",
       "Safari",
+      "Sciuro_Kvar",
       "SeeVogel",
       "Serienchiller",
       "Shishir",
@@ -200,7 +201,6 @@
       "mhr",
       "moskytoo",
       "mramosch",
-      "mraz",
       "mrdax",
       "nGerman",
       "nemoli",
@@ -255,11 +255,11 @@
       "CC BY 4.0": [
         {
           "recorder": "MisterTrouser",
-          "clips": 800
+          "clips": 797
         },
         {
           "recorder": "Yeti",
-          "clips": 135
+          "clips": 137
         }
       ]
     }

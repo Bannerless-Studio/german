@@ -46,15 +46,15 @@
    },
    {
     "id": "p01.2",
-    "src": "s0125",
-    "t": "Wir sind beide aus Tampa.",
-    "en": "Both of us are from Tampa.",
+    "src": "s2888",
+    "t": "Wir sind jetzt frei.",
+    "en": "We're free now.",
     "lv": "A1",
     "words": [
      "w0018",
      "w0003",
-     "w0234",
-     "w0042"
+     "w0060",
+     "w0292"
     ],
     "marks": [
      [
@@ -1672,22 +1672,21 @@
    },
    {
     "id": "p10.3",
-    "src": "s3376",
-    "t": "Ich brauche Wasser, denn ich habe Durst.",
-    "en": "I need water because I am thirsty.",
+    "src": "s3403",
+    "t": "Ihr seid schöner denn je.",
+    "en": "You're more beautiful than ever.",
     "lv": "A1",
     "words": [
-     "w0002",
-     "w0114",
-     "w0346",
+     "w0058",
+     "w0003",
+     "w0109",
      "w0327",
-     "w0006",
-     "w0576"
+     "w0319"
     ],
     "marks": [
      [
-      20,
-      24
+      17,
+      21
      ]
     ]
    },

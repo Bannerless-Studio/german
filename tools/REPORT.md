@@ -27,8 +27,8 @@ Candidate pool: 6,858 (lemma, POS) keys in blended-rank order, one POS per lemma
 
 | Exclusion | Count | Examples |
 |---|---|---|
+| second POS entry without a distinct sense | 73 | aber, all, anderer, ganz, mehr, bis, dein, jeder, beide, warum, ohne, recht |
 | no usable Wiktionary entry for corpus POS | 73 | hey, kriegen, wow, meister, viele, dar, tommy, gehts, that, vieler, gibts, gibts |
-| second POS entry without a distinct sense | 72 | aber, all, anderer, ganz, mehr, bis, dein, jeder, beide, warum, ohne, recht |
 | English loanword unattested in German corpus | 31 | miss, mom, boss, story, deal, top, lady, lord, van, out, pop, master |
 | interjection (not in forced greetings) | 25 | na, ach, okay, stimmt, o, ah, he, naja, ha, äh, ähm, weh |
 | proper noun (corpus PROPN/capitalised majority) | 15 | internet, hm, mark, ok, city, oh, rum, queen, billy, polen, lee, high |
@@ -36,22 +36,23 @@ Candidate pool: 6,858 (lemma, POS) keys in blended-rank order, one POS per lemma
 | profanity (hand list) | 3 | verdammt, ficken, nutte |
 
 Forced A1 items (days, months, seasons, numbers 0-20 + tens + hundert/tausend, colours, personal and possessive pronouns, question words, articles, core prepositions/conjunctions, greetings, A1 core list): 341/341 included.
-Word ids reused from v1 for unchanged (lemma, pos): 1,961; the rest are new ids above w2000 (v1 ids of words whose POS/lemma was wrong are retired, not reassigned).
+Word ids reused from v1 for unchanged (lemma, pos): 2,000; the rest are new ids above w2000 (v1 ids of words whose POS/lemma was wrong are retired, not reassigned).
 
 Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 804, 'verb': 513, 'adj': 317, 'adv': 201, 'prep': 41, 'num': 30, 'conj': 29, 'pron': 27, 'det': 22, 'intj': 7, 'phrase': 5, 'art': 2, 'part': 2}.
 
 ## Sentences
 
-- Final sentences: **3,399**, 935 with audio (`https://tatoeba.org/audio/download/<audio_id>`).
+- Final sentences: **3,393**, 934 with audio (`https://tatoeba.org/audio/download/<audio_id>`).
+- Sentence ids (`tools/sentence_ids_v1.json`): 3,393 kept, 0 new, 11 retired.
 - Word coverage: 0 = 0, 1 = 1, 2 = 1999.
-- Candidate sentences (terminal punctuation, 3-14 tokens, content lemmas in pack/top-3000, >=1 link): 307,526. Rejected for a content lemma outside pack/top-3000: 165,564.
-- Präteritum (other than sein/haben/modals): 46,247 candidates contain one; 46,198 were blocked for A1/A2 words; 247 in the final set (all lv B1).
-- Primary word level of each sentence: {'A1': 901, 'A2': 1229, 'B1': 1269}.
+- Candidate sentences (terminal punctuation, 3-14 tokens, content lemmas in pack/top-3000, >=1 link): 307,528. Rejected for a content lemma outside pack/top-3000: 165,564.
+- Präteritum (other than sein/haben/modals): 46,248 candidates contain one; 46,199 were blocked for A1/A2 words; 246 in the final set (all lv B1).
+- Primary word level of each sentence: {'A1': 896, 'A2': 1229, 'B1': 1268}.
 - Token-length distribution of the final set:
 
 | tokens | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| sentences | 361 | 708 | 199 | 991 | 1020 | 88 | 19 | 5 | 6 | 2 |
+| sentences | 361 | 707 | 198 | 989 | 1019 | 87 | 19 | 5 | 6 | 2 |
 
 ## Top 100 by rank (lemma [pos] gloss)
 
@@ -71,7 +72,7 @@ Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 804, 'verb': 513, 'adj'
   13 er [pron] he; him, it
   14 mit [prep] with
   15 von [prep] from; of, belonging to
-  16 zu [part] to (before an infinitive); too (zu viel)
+  16 zu [part] to (+ infinitive); too (zu viel)
   17 sie [pron] she; they; her, them
   18 wir [pron] we; us
   19 auf [prep] on, upon
@@ -79,10 +80,10 @@ Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 804, 'verb': 513, 'adj'
   21 an [prep] at, on, in
   22 Sie [pron] you (formal)
   23 für [prep] for
-  24 dass [conj] that
+  24 dass [conj] that (conjunction)
   25 was [pron] what
   26 so [adv] so, like this, thus
-  27 zu [prep] to; at
+  27 zu [prep] to (a place or person); at
   28 mein [det] my
   29 gut [adj] good
   30 sich [pron] oneself, himself, herself, themselves
@@ -92,10 +93,10 @@ Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 804, 'verb': 513, 'adj'
   34 wollen [verb] to want (to)
   35 noch [adv] still; yet; more
   36 aber [conj] but
-  37 bei [prep] in, at, for; with, on
+  37 bei [prep] at, near; with (a person or place)
   38 müssen [verb] must, to have to
   39 nur [adv] only, just
-  40 aus [prep] from
+  40 aus [prep] out of; from
   41 hier [adv] here
   42 machen [verb] to make, to do
   43 kein [det] no, not a, not any
@@ -116,20 +117,20 @@ Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 804, 'verb': 513, 'adj'
   58 man [pron] one, you, people
   59 wie [adv] how
   60 jetzt [adv] now
-  61 ja [adv] (particle) of course, as you know
+  61 ja [adv] indeed (particle); of course
   62 alles [pron] everything
   63 sehen [verb] to see
   64 wissen [verb] to know (a fact)
-  65 vor [prep] ago; before, ahead of, prior to
+  65 vor [prep] before, in front of; ago
   66 ja [intj] yes
-  67 über [prep] about, over, at
+  67 über [prep] about, over; above
   68 nein [intj] no
   69 immer [adv] always
   70 lassen [verb] to let, to leave; to have (something) done
   71 doch [adv] after all, yet; (answer) yes
   72 mal [adv] once, just (softener)
   73 tun [verb] to do
-  74 wie [prep] as
+  74 wie [prep] like; as
   75 wieder [adv] again
   76 dein [det] your (informal)
   77 um [conj] in order to, so as to
@@ -266,4 +267,5 @@ sentences come from reselection around the 78 words. Other ids, levels and
 glosses are unchanged. Check: 0 errors, 13 warnings. Determinism: two builds
 (PYTHONHASHSEED 123 vs unset) byte-identical.
 - 2026-09-25: engine bumped to 072795d (voice-init fix, no-voice notice timing, word ceiling). 8 words moved A2->B1 under the shared word-level ceiling: töten, Waffe, Sex, Blut, umbringen, Mord, Droge, Leiche. Band-edge shifts from re-counting: außer A2->A1; Loch, studieren, präsentieren, teilnehmen, Pause, Doktor, Vorschlag, Schicksal B1->A2. Sentences 3,407 -> 3,399 (8 dropped, 0 added), passages byte-identical. No rank, id or gloss changed.
+- 2026-10-14: gloss and tier QA pass (engine 41b5fff tools). Part A: all 2000 glosses read, 250 `en` changed (248 keys in tools/gloss_overrides.json, now 450 keys; 9 older keys edited): wrong or rare primary sense or missing B1 sense first (about 155), duplicate `en` disambiguated (about 38), explanation-first or truncated (about 17), wrong POS or form (about 22), archaic or regional wording (about 18). Part B: new tools/tiers_overrides.json, 160 moves by word id: 140 peripheral -> core (60 A1 basics: numerals 11-1000, colours, days, months, seasons, greetings, food; 39 B1 survival words ids w2001-w2039; 41 A2/B1 spoken, travel and home basics) and 20 core -> peripheral (subtitle genre: Idiot, Hoelle, Teufel, Schwanz; ranks and royalty: Soldat, General, Armee, Prinz, Prinzessin, Koenigin, Koenig, Engel, Feind; crime: Mord, Leiche, umbringen, Waffe; Dollar, manch, namens). Tiers [ambient core peripheral]: A1 [100, 500, 0], A2 [0, 547, 153], B1 [0, 458, 242]. Ids, rank, lv, g, pron and examples unchanged by the pass. Sample 505: words 59/60 before fix (ergeben lacked "make sense"), links 99.1% (rein, billig, eingehend), sentences 57/60 fully correct. Gang (die Gang, gang) keeps its gloss: the B1-common der Gang (corridor, gear) is a lexicon/gender defect, not a gloss one. Two pattern sentences (src s0125, s3376) are no longer in sentences.json after the engine bump; replaced in patterns.json by s2888 (p01.2) and s3403 (p10.3).
 <!-- manual:end -->
