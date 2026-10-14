@@ -46,20 +46,21 @@
    },
    {
     "id": "p01.2",
-    "src": "s2888",
-    "t": "Wir sind jetzt frei.",
-    "en": "We're free now.",
+    "src": "s3369",
+    "t": "Er ist achtzig Jahre alt.",
+    "en": "He is eighty years old.",
     "lv": "A1",
     "words": [
-     "w0018",
+     "w0013",
      "w0003",
-     "w0060",
-     "w0292"
+     "w0589",
+     "w0079",
+     "w0130"
     ],
     "marks": [
      [
-      4,
-      8
+      3,
+      6
      ]
     ]
    },
@@ -1614,10 +1615,10 @@
  {
   "id": "p10",
   "lv": "A1",
-  "label": "weil / denn / deshalb",
-  "en": "because / because / so",
+  "label": "weil / deshalb",
+  "en": "because / so",
   "note": [
-   "weil: verb last. denn: normal order. deshalb: so.",
+   "weil: verb last. (denn: normal order.) deshalb: so.",
    "Weil ich müde bin. Ich bin müde, denn ... Deshalb ..."
   ],
   "near": [
@@ -1627,7 +1628,6 @@
   ],
   "keys": [
    "w0096",
-   "w0327",
    "w0335"
   ],
   "sentences": [
@@ -1667,26 +1667,6 @@
      [
       0,
       4
-     ]
-    ]
-   },
-   {
-    "id": "p10.3",
-    "src": "s3403",
-    "t": "Ihr seid schöner denn je.",
-    "en": "You're more beautiful than ever.",
-    "lv": "A1",
-    "words": [
-     "w0058",
-     "w0003",
-     "w0109",
-     "w0327",
-     "w0319"
-    ],
-    "marks": [
-     [
-      17,
-      21
      ]
     ]
    },
