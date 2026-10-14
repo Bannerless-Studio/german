@@ -7285,7 +7285,7 @@
     ],
     [
      "Schreib mir bitte bis heute Abend, ob du Zeit und Lust hast.",
-     "Please write to me by this evening whether you have time and want to."
+     "Please write to me by this evening whether you have time and feel like it."
     ],
     [
      "Ich freue mich schon sehr auf unseren Tag! Bis bald, Anna",
@@ -7421,7 +7421,7 @@
     ],
     [
      "„Ja, das ist sie! Sie haben mich gerettet“, ruft Frau Becker und lacht.",
-     "\"Yes, that is it! You saved me\", calls Mrs Becker and laughs."
+     "\"Yes, that is it! You saved me\", Mrs Becker exclaims and laughs."
     ]
    ],
    "questions": [
@@ -7562,7 +7562,7 @@
       "An jedem Dienstag",
       "An jedem Samstag",
       "An jedem Sonntag",
-      "An allen Montagen"
+      "An jedem Montag"
      ],
      "answer": 3,
      "words": [
@@ -7618,9 +7618,9 @@
      "type": "mc",
      "options": [
       "Etwas zu essen",
-      "Nichts zu essen",
-      "Geld für den Club",
-      "Sein eigenes Auto"
+      "Seine Sportsachen",
+      "Eine Liste mit Namen",
+      "Zehn Euro für den Club"
      ],
      "answer": 0,
      "words": [
@@ -7741,7 +7741,7 @@
   {
    "id": "p0065",
    "lv": "A2",
-   "title": "Neuer Spielplatz im Wald",
+   "title": "Ein neuer Platz am Wald",
    "oop": {},
    "sentences": [
     [
@@ -7761,12 +7761,12 @@
      "The place is by the forest, not far from the school."
     ],
     [
-     "Es gibt dort Platz für eine große Menge Kinder.",
-     "There is room there for a large number of children."
+     "Dort können viele Kinder zusammen spielen.",
+     "Many children can play together there."
     ],
     [
-     "Die Kinder dürfen mit Steinen bauen und das Ergebnis den Eltern zeigen.",
-     "The children may build with stones and show the result to their parents."
+     "Die Kinder dürfen mit Steinen bauen und lernen so die Natur kennen.",
+     "The children may build with stones and so get to know nature."
     ],
     [
      "Der Bürgermeister sagt, dass man auf die Natur gut aufpassen muss.",
@@ -7797,8 +7797,8 @@
      "options": [
       "Die Eltern der Kinder",
       "Die Schule im Dorf",
-      "Die Kinder",
-      "Das Land"
+      "Die Familien in der Gemeinde",
+      "Die Regierung vom Land"
      ],
      "answer": 3,
      "words": [
@@ -7844,7 +7844,7 @@
      "answer": true,
      "words": [
       "Stein",
-      "Ergebnis"
+      "bauen"
      ],
      "sentence": 5
     },
@@ -8138,7 +8138,7 @@
     ],
     [
      "Er hat ein Papier mit vielen Zeichen gemacht, damit die Kinder den Weg finden.",
-     "He made a paper with many signs so the children can find the way."
+     "He drew up a sheet of paper with many signs so the children can find the way."
     ],
     [
      "Der erste Hinweis ist ein großer Stein neben einem Baum.",
@@ -8158,11 +8158,11 @@
     ],
     [
      "„Gold!“, ruft seine Schwester, aber es sind nur Äpfel und Kuchen.",
-     "\"Gold!\", calls his sister, but it is only apples and cake."
+     "\"Gold!\", his sister exclaims, but it is only apples and cake."
     ],
     [
-     "Jedes Kind bekommt die Hälfte vom Kuchen, den Rest isst der Vater.",
-     "Every child gets half of the cake, the father eats the rest."
+     "Jedes Kind bekommt ein Stück vom Kuchen, den Rest isst der Vater.",
+     "Every child gets a piece of the cake, the father eats the rest."
     ],
     [
      "Alle lachen und gehen mit viel Freude nach Hause.",
@@ -8241,7 +8241,7 @@
      "answer": 3,
      "words": [
       "Rest",
-      "Hälfte"
+      "Stück"
      ],
      "sentence": 8
     }
@@ -8274,8 +8274,8 @@
      "The game starts at three o'clock, and many people are there."
     ],
     [
-     "In der ersten Runde laufen beide Clubs viel, aber niemand schießt ein Tor.",
-     "In the first round both clubs run a lot, but nobody scores a goal."
+     "In der ersten Hälfte laufen beide Clubs viel, aber niemand schießt ein Tor.",
+     "In the first half both clubs run a lot, but nobody scores a goal."
     ],
     [
      "Nach der Pause hat Jan plötzlich den Ball und schießt aus zwanzig Metern.",
@@ -8304,10 +8304,10 @@
      "en": "Who does the club play against?",
      "type": "mc",
      "options": [
-      "Gegen eine Schule",
+      "Gegen eine Schule in der Stadt",
       "Gegen einen anderen Club",
-      "Gegen eine Familie",
-      "Gegen den Trainer"
+      "Gegen die Familie von Jan",
+      "Gegen den eigenen Trainer"
      ],
      "answer": 1,
      "words": [
@@ -8333,10 +8333,10 @@
      "en": "Who scores the goal?",
      "type": "mc",
      "options": [
-      "Jan",
-      "Der Trainer",
-      "Ein Fan",
-      "Der Vater"
+      "Jan, ein Freund aus dem Club",
+      "Der Trainer des Clubs",
+      "Ein Spieler vom anderen Club",
+      "Der Vater eines Spielers"
      ],
      "answer": 0,
      "words": [
@@ -8403,8 +8403,8 @@
      "He says that in the past people had more time for nature."
     ],
     [
-     "Seine Erinnerung ist sehr gut, er weiß sogar noch jeden Namen.",
-     "His memory is very good, he even still knows every name."
+     "Er kann sich sogar noch an jeden Namen erinnern.",
+     "He can even still remember every name."
     ],
     [
      "Ich höre ihm gern zu, weil jede Geschichte ein kleines Geheimnis hat.",
@@ -8481,7 +8481,7 @@
      "options": null,
      "answer": false,
      "words": [
-      "Erinnerung",
+      "erinnern",
       "Name"
      ],
      "sentence": 5
@@ -8524,12 +8524,12 @@
      "The rent is not cheap at 600 euros, but the flat has a bedroom of its own."
     ],
     [
-     "Der Vermieter, ein netter älterer Mann, hat ihm den Schlüssel gegeben und alles erklärt.",
-     "The landlord, a nice older man, gave him the key and explained everything."
+     "Der Vermieter, ein netter älterer Mann, hat ihm den Schlüssel gegeben.",
+     "The landlord, a nice older man, gave him the key."
     ],
     [
-     "Er hat gezeigt, wie man die Heizung benutzt, die im Winter manchmal Probleme macht.",
-     "He showed how to use the heating, which sometimes causes problems in winter."
+     "Dann hat er ihm gezeigt, wie man die Heizung benutzt, die im Winter manchmal Probleme macht.",
+     "Then he showed him how to use the heating, which sometimes causes problems in winter."
     ],
     [
      "Am Samstag haben drei Freunde geholfen, die Möbel in die Wohnung zu tragen.",
@@ -8549,7 +8549,7 @@
     ],
     [
      "Am Montag geht er zum Amt, um ein Formular für die neue Adresse abzugeben.",
-     "On Monday he goes to the office to hand in a form for the new address."
+     "On Monday he goes to the authorities to hand in a form for the new address."
     ]
    ],
    "questions": [
@@ -8583,8 +8583,8 @@
      "sentence": 2
     },
     {
-     "q": "Was hat der Vermieter erklärt?",
-     "en": "What did the landlord explain?",
+     "q": "Was hat der Vermieter ihm außer dem Schlüssel gezeigt?",
+     "en": "What did the landlord show him besides the key?",
      "type": "mc",
      "options": [
       "Wie man die Miete im Monat zahlt",
@@ -8661,8 +8661,8 @@
      "\"But I have no ticket, and the machine is broken.\""
     ],
     [
-     "„Sie können die Karte beim Fahrer kaufen, oder Sie steigen um und fahren bis zur nächsten Station.“",
-     "\"You can buy the ticket from the driver, or you change and go to the next station.\""
+     "„Sie können die Karte auch in der Bahn beim Fahrer kaufen.“",
+     "\"You can also buy the ticket in the train from the driver.\""
     ],
     [
      "„Danke, das mache ich. Muss ich unterwegs noch einmal umsteigen?“",
@@ -8687,8 +8687,8 @@
    ],
    "questions": [
     {
-     "q": "Warum ist die Frau nervös?",
-     "en": "Why is the woman nervous?",
+     "q": "Warum muss die Frau schnell sein?",
+     "en": "Why does the woman have to be quick?",
      "type": "mc",
      "options": [
       "Sie hat ihr Handy zu Hause verloren",
@@ -8721,7 +8721,7 @@
      "options": [
       "Am Gerät in der Nähe",
       "Beim Chef im Büro",
-      "Vom Fahrer im Bus",
+      "Beim Fahrer in der Bahn",
       "Bei der Bank um die Ecke"
      ],
      "answer": 2,
@@ -8748,7 +8748,7 @@
      "type": "mc",
      "options": [
       "Er muss weiter warten.",
-      "Er fährt mit dem Taxi.",
+      "Er fährt mit dem Fahrrad.",
       "Er geht zu Fuß.",
       "Er kauft eine Karte."
      ],
@@ -8775,8 +8775,8 @@
      "Yesterday the invitation to an interview finally came."
     ],
     [
-     "Sophie war nervös und hat zwei Abende lang geübt, was sie sagen will.",
-     "Sophie was nervous and practised for two evenings what she wants to say."
+     "Sophie war nervös und hat den ganzen Abend geübt, was sie sagen will.",
+     "Sophie was nervous and practised the whole evening what she wants to say."
     ],
     [
      "Am Morgen hat sie ihre beste Kleidung angezogen und ist früh gefahren.",
@@ -8792,7 +8792,7 @@
     ],
     [
      "Sophie hat von ihrer Praxis im letzten Job erzählt und gesagt, dass sie noch viel lernen will.",
-     "Sophie told about her practice in her last job and said she still wants to learn a lot."
+     "Sophie talked about her experience in her last job and said she still wants to learn a lot."
     ],
     [
      "Das hat bei dem Chef einen guten Eindruck gemacht.",
@@ -8850,9 +8850,9 @@
      "type": "mc",
      "options": [
       "Wie alt Sophie ist und wo sie wohnt",
-      "Was sie gut kann",
+      "Welche Fähigkeiten sie für die Stelle hat",
       "Ob sie lieber im Büro oder zu Hause arbeitet",
-      "Ob sie Kinder hat"
+      "Ob sie schon Kinder und Familie hat"
      ],
      "answer": 1,
      "words": [
@@ -8878,9 +8878,9 @@
      "en": "When will the boss get in touch?",
      "type": "mc",
      "options": [
-      "Vor dem Wochenende",
-      "Bis Montag um acht Uhr",
-      "Am Mittwoch gegen Abend",
+      "Noch in dieser Woche, bis Freitag",
+      "Erst in zwei Wochen",
+      "Am Montag der nächsten Woche",
       "Im nächsten Monat"
      ],
      "answer": 0,
@@ -8974,9 +8974,9 @@
      "type": "mc",
      "options": [
       "Ein Freund aus dem Verein",
-      "Der Nachbar",
+      "Der Nachbar aus demselben Haus",
       "Die Mutter meiner Freundin",
-      "Der Bruder"
+      "Der Bruder meiner Frau"
      ],
      "answer": 1,
      "words": [
@@ -9031,8 +9031,8 @@
      "This is shown by a new report that was presented yesterday."
     ],
     [
-     "Seit zehn Jahren ist der Anteil der Radfahrer um mehr als die Hälfte gestiegen.",
-     "Over ten years the share of cyclists has risen by more than half."
+     "Seit zehn Jahren ist der Anteil der Menschen, die mit dem Rad fahren, um mehr als die Hälfte gestiegen.",
+     "Over ten years the share of people who ride a bike has risen by more than half."
     ],
     [
      "Als Gründe nennen die Leute die Umwelt, die Gesundheit und die hohen Kosten für das Auto.",
@@ -9065,14 +9065,14 @@
    ],
    "questions": [
     {
-     "q": "Wie viele Menschen fahren heute mit dem Rad?",
-     "en": "How many people ride a bike today?",
+     "q": "Wie verändert sich die Zahl der Menschen, die Rad fahren?",
+     "en": "How is the number of people who ride a bike changing?",
      "type": "mc",
      "options": [
-      "Weniger als früher",
-      "Genauso viele wie früher",
-      "Fast niemand",
-      "Jedes Jahr mehr"
+      "Sie wird jedes Jahr kleiner.",
+      "Sie bleibt seit Jahren gleich.",
+      "Sie ist nicht mehr bekannt.",
+      "Sie steigt immer weiter."
      ],
      "answer": 3,
      "words": [
@@ -9082,8 +9082,8 @@
      "sentence": 0
     },
     {
-     "q": "Der Anteil der Radfahrer ist deutlich gestiegen.",
-     "en": "The share of cyclists has risen clearly.",
+     "q": "Der Anteil der Menschen auf dem Rad ist deutlich gestiegen.",
+     "en": "The share of people on bikes has risen clearly.",
      "type": "tf",
      "options": null,
      "answer": true,
@@ -9148,8 +9148,8 @@
    "oop": {},
    "sentences": [
     [
-     "Clara Weiß ist eine Frau, die vor allem durch ihre Bilder bekannt geworden ist.",
-     "Clara Weiß is a woman who has become known above all through her pictures."
+     "Clara Weiß ist vor allem durch ihre Bilder bekannt geworden.",
+     "Clara Weiß has become known above all through her pictures."
     ],
     [
      "Wir haben sie vor einer großen Veranstaltung getroffen.",
@@ -9161,7 +9161,7 @@
     ],
     [
      "Ihr Talent hat ein Lehrer früh erkannt und ihr viel Mut gemacht.",
-     "A teacher recognised her talent early and gave her a lot of courage."
+     "A teacher recognised her talent early and gave her a lot of encouragement."
     ],
     [
      "Danach hat sie fünf Jahre studiert und gleichzeitig in einem Theater gearbeitet.",
@@ -9181,7 +9181,7 @@
     ],
     [
      "Auf die Frage nach ihrem größten Erfolg lacht sie und antwortet: „Dass ich davon leben kann.“",
-     "Asked about her greatest success she laughs and answers: \"That I can live from it.\""
+     "Asked about her greatest success she laughs and answers: \"That I can make a living from it.\""
     ],
     [
      "Jungen Künstlern rät sie, nie aufzugeben und immer mit Freude zu arbeiten.",
@@ -9199,9 +9199,9 @@
      "type": "mc",
      "options": [
       "Bei der Polizei arbeiten",
+      "Als Lehrer arbeiten",
       "Ein Buch über Tiere schreiben",
-      "Im Ausland ein neues Leben anfangen",
-      "Als Lehrer an einer Schule arbeiten"
+      "Im Ausland ein neues Leben anfangen"
      ],
      "answer": 0,
      "words": [
@@ -9281,8 +9281,8 @@
      "Today we wanted to climb the mountain south of the city."
     ],
     [
-     "Am Morgen war es warm, und ich habe nur ein Hemd und eine leichte Jacke angezogen.",
-     "In the morning it was warm, and I put on only a shirt and a light jacket."
+     "Am Morgen war es warm, und ich habe nur ein Hemd und dazu eine leichte Jacke angezogen.",
+     "In the morning it was warm, and I put on only a shirt and a light jacket with it."
     ],
     [
      "Dann kamen aus dem Norden dunkle Wolken, und die Temperatur ist schnell gefallen.",
@@ -9327,7 +9327,7 @@
      "en": "What did he wear in the morning?",
      "type": "mc",
      "options": [
-      "Ein Hemd und eine kurze Jacke",
+      "Ein Hemd und eine leichte Jacke",
       "Einen dicken Pullover und eine Hose",
       "Eine warme Hose und feste Schuhe",
       "Nur ein T-Shirt"
@@ -9551,11 +9551,11 @@
     ],
     [
      "Er hat sofort seine Versicherung angerufen, aber niemand hat geantwortet.",
-     "He immediately called his insurance, but nobody answered."
+     "He immediately called his insurer, but nobody answered."
     ],
     [
-     "Also hat er ein Taxi genommen und ist zu spät ins Büro gekommen.",
-     "So he took a taxi and arrived late at the office."
+     "Also ist er mit dem Bus gefahren und zu spät ins Büro gekommen.",
+     "So he took the bus and arrived late at the office."
     ],
     [
      "Sein Chef war nicht begeistert, hat aber nichts gesagt.",
@@ -9617,13 +9617,14 @@
      "en": "How did Markus get to work?",
      "type": "mc",
      "options": [
-      "Mit dem Bus",
+      "Mit der Bahn",
       "Zu Fuß",
-      "Mit dem Taxi",
+      "Mit dem Bus",
       "Mit dem Fahrrad"
      ],
      "answer": 2,
      "words": [
+      "Bus",
       "spät"
      ],
      "sentence": 4
@@ -9698,7 +9699,7 @@
      "Besides, each generation of the family writes a greeting on a card."
     ],
     [
-     "Meine Oma weiß von nichts, und die Überraschung soll ihr wirklich gelingen.",
+     "Meine Oma weiß von nichts, und die Überraschung soll wirklich gelingen.",
      "My grandma knows nothing, and the surprise is supposed to really work."
     ],
     [
