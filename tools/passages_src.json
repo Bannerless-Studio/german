@@ -1893,7 +1893,9 @@
    "id": "p0018",
    "lv": "A1",
    "title": "Wo bist du?",
-   "oop": {},
+   "oop": {
+     "jan.": "name (Jan, abbreviated by the tagger lemma \"Jan.\")"
+   },
    "sentences": [
     [
      "Frau Neumann ruft ihren Sohn Felix an.",
@@ -6360,7 +6362,9 @@
    "id": "p0054",
    "lv": "B1",
    "title": "Die Hochzeit meines Bruders",
-   "oop": {},
+   "oop": {
+     "daniels": "name (Daniel's, genitive; the tagger lemma keeps the s)"
+   },
    "sentences": [
     [
      "Letzten Samstag hat mein Bruder Daniel seine Freundin Julia geheiratet, mit der er schon seit acht Jahren zusammen ist.",
@@ -7506,7 +7510,9 @@
    "id": "p0063",
    "lv": "A2",
    "title": "Hinweis für alle Mitglieder",
-   "oop": {},
+   "oop": {
+     "sportsachen": "sports gear (compound noun, not in the pack)"
+   },
    "sentences": [
     [
      "Liebe Mitglieder unseres Clubs,",
@@ -9274,7 +9280,9 @@
    "id": "p0077",
    "lv": "B1",
    "title": "Eine Wanderung mit Folgen",
-   "oop": {},
+   "oop": {
+     "t-shirt": "clothing word (T-Shirt, not in the pack)"
+   },
    "sentences": [
     [
      "Heute wollten wir auf den Berg im Süden der Stadt steigen.",
@@ -9403,7 +9411,9 @@
    "id": "p0078",
    "lv": "B1",
    "title": "Ein Jahr im Ausland",
-   "oop": {},
+   "oop": {
+     "schreiberin": "female writer (not in the pack)"
+   },
    "sentences": [
     [
      "Liebe Tanja,",
