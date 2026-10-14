@@ -31,7 +31,7 @@ Residuals from the v1 QA rounds. The rules already in place are described in
   bewerben, Kreuzung, Quittung, Visum.
 
 ## Reading passages
-- A native-speaker pass over the 60 texts has not been done yet; only an
+- A native-speaker pass over the 80 texts has not been done yet; only an
   automated QA pass plus one round of manual/external QA fixes (see
   `tools/REPORT_passages.md` for the full manual notes and per-passage
   coverage/link numbers).
@@ -39,7 +39,7 @@ Residuals from the v1 QA rounds. The rules already in place are described in
   (links alles), unter der Woche (links Woche), erst einmal (links erst +
   einmal), Danke schön (links schön).
 - The sentence-initial article in "Die meisten ..." (p0043 s5) has no span.
-- The only out-of-pack word across all 60 passages is gleis, a station-
+- The only out-of-pack word across all 80 passages is gleis, a station-
   announcement term (p0033), judged unavoidable there.
 - The passage linker rules for German (finite-verb-next-to-subject
   disambiguation, salutation lieb vs. lieben, meisten/Meister guard, gehört

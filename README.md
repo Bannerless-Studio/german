@@ -3,7 +3,7 @@
 Static data pack for a language-agnostic vocab trainer (`key: "de"`). It has
 2000 words spanning A1-B1. Each word has a short English gloss, and nouns show
 their article and plural. Example sentences come with translations and, where
-the licence permits, native audio. The Read tab adds 60 short reading
+the licence permits, native audio. The Read tab adds 80 short reading
 passages with comprehension questions (see "Reading passages" below).
 
 **Live:** https://bannerless-studio.github.io/german/
@@ -41,8 +41,8 @@ only at B1 (same call as Spanish matar/morir and Russian убить). See
 
 ## Reading passages (Read tab)
 
-60 short reading texts, 20 each at A1, A2 and B1, with comprehension
-questions each. A level's 20 passages unlock once you've learned 70% of that
+80 short reading texts, 20 at A1 and 30 each at A2 and B1, with comprehension
+questions each. A level's passages unlock once you've learned 70% of that
 level's words. Tapping any word in a passage shows its gloss, including
 inflected forms. Comprehension questions feed missed words back into the
 review queue as weak words. The passages and questions are machine-written,

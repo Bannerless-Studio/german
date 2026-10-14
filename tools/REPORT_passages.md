@@ -10,8 +10,8 @@ words = the builder's word count (the band rule); ws_words = whitespace-separate
 tokens of the passage text, the count the app shows (report only).
 
 - **A1**: 20 passages; words/passage 64-89 (median 77.5); ws_words 64-89; coverage min 1.000, median 1.000 (rule >= 0.95); linked min 1.000; questions mc 42, tf 45
-- **A2**: 20 passages; words/passage 97-119 (median 114.5); ws_words 97-119; coverage min 0.977, median 1.000 (rule >= 0.95); linked min 0.977; questions mc 50, tf 48
-- **B1**: 20 passages; words/passage 132-149 (median 145.0); ws_words 133-150; coverage min 1.000, median 1.000 (rule >= 0.93); linked min 1.000; questions mc 51, tf 49
+- **A2**: 30 passages; words/passage 97-120 (median 115.5); ws_words 97-120; coverage min 0.977, median 1.000 (rule >= 0.95); linked min 0.977; questions mc 79, tf 68
+- **B1**: 30 passages; words/passage 132-150 (median 143.0); ws_words 133-150; coverage min 1.000, median 1.000 (rule >= 0.93); linked min 1.000; questions mc 81, tf 69
 
 | id | lv | title | words | ws_words | coverage | linked | out-of-pack lemmas (reason) | higher-level lemmas |
 |---|---|---|---|---|---|---|---|---|
@@ -75,12 +75,33 @@ tokens of the passage text, the count the app shows (report only).
 | p0058 | B1 | Mehr Busse für unser Dorf | 145 | 145 | 1.000 | 1.000 | - | - |
 | p0059 | B1 | Eine Sprache als Erwachsener lernen | 146 | 146 | 1.000 | 1.000 | - | - |
 | p0060 | B1 | In zehn Jahren | 143 | 143 | 1.000 | 1.000 | - | - |
+| p0061 | A2 | Pläne für Samstag | 120 | 120 | 1.000 | 1.000 | - | B1: Eis, mitkommen |
+| p0062 | A2 | Am Bahnhof | 119 | 119 | 1.000 | 1.000 | - | B1: Fahrkarte |
+| p0063 | A2 | Hinweis für alle Mitglieder | 116 | 116 | 1.000 | 1.000 | - | B1: geschlossen, umziehen |
+| p0064 | A2 | Ein Tag auf der Insel | 118 | 118 | 1.000 | 1.000 | - | B1: Fahrt, mieten |
+| p0065 | A2 | Neuer Spielplatz im Wald | 113 | 113 | 1.000 | 1.000 | - | B1: Kino |
+| p0066 | A2 | Eine E-Mail von Oma | 112 | 112 | 1.000 | 1.000 | - | B1: Pullover, Tante |
+| p0067 | A2 | Beim Doktor | 103 | 103 | 1.000 | 1.000 | - | B1: abends |
+| p0068 | A2 | Die Schatzsuche | 111 | 111 | 1.000 | 1.000 | - | - |
+| p0069 | A2 | Das Spiel am Samstag | 116 | 116 | 1.000 | 1.000 | - | B1: Trainer, nervös |
+| p0070 | A2 | Ein Abend am Feuer | 118 | 118 | 1.000 | 1.000 | - | - |
+| p0071 | B1 | Der Umzug | 141 | 142 | 1.000 | 1.000 | - | - |
+| p0072 | B1 | Verspätung | 150 | 150 | 1.000 | 1.000 | - | - |
+| p0073 | B1 | Das Vorstellungsgespräch | 139 | 139 | 1.000 | 1.000 | - | - |
+| p0074 | B1 | Kochen für Freunde | 137 | 137 | 1.000 | 1.000 | - | - |
+| p0075 | B1 | Mehr Menschen fahren Rad | 144 | 145 | 1.000 | 1.000 | - | - |
+| p0076 | B1 | Ein Gespräch über Bilder | 148 | 148 | 1.000 | 1.000 | - | - |
+| p0077 | B1 | Eine Wanderung mit Folgen | 143 | 143 | 1.000 | 1.000 | - | - |
+| p0078 | B1 | Ein Jahr im Ausland | 135 | 135 | 1.000 | 1.000 | - | - |
+| p0079 | B1 | Der kaputte Wagen | 138 | 138 | 1.000 | 1.000 | - | - |
+| p0080 | B1 | Der achtzigste Geburtstag | 141 | 141 | 1.000 | 1.000 | - | - |
 
 Title words, and question/option words the budget does not count (a numeral-like
 pack word), that are out of the pack or above the passage's level (report only;
 the budget rule above is unchanged):
 
 - p0050: title 'Lärm': out of pack
+- p0080: title 'achtzigste': out of pack
 
 <!-- manual section: kept across runs -->
 
@@ -155,3 +176,19 @@ the budget rule above is unchanged):
   A2 adds the perfect and some Präteritum beyond sein and haben (standen,
   konnte, gab), which is normal for A2 reading. B1 adds more Präteritum,
   Konjunktiv II, Futur, passive and reported speech.
+
+## Addendum (2026-10-14): p0061-p0080
+
+- 20 passages appended (10 A2 p0061-p0070, 10 B1 p0071-p0080), mixed genres
+  (message, dialogue, notice, diary, news, email, doctor visit, narrative,
+  interview, speech). p0001-p0060 are kept byte-identical to the previous
+  `pack/passages.json`: the current builder re-orders `words` inside 11
+  sentences of 10 older passages (same sets), so the first 60 entries were
+  spliced from the committed file and only the 20 new entries come from the
+  builder run. A fresh `packbuilder passages` run therefore shows that
+  ordering diff; it is harmless (no id, key or span changes).
+- New 20: no out-of-pack lemma, coverage 1.000 on every passage.
+  Questions: A2 29 mc / 20 tf, B1 30 mc / 20 tf; correct mc position 0/1/2/3
+  A2 7/7/7/8, B1 7/8/7/8; correct key the unique longest A2 1/29, B1 0/30;
+  verbatim mc keys A2 9/29, B1 8/30; no 5-word run shared between a tf item
+  or an mc key and its passage.
